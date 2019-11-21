@@ -35,6 +35,8 @@ public class KubernetesAccount extends ContainerAccount implements Cloneable {
   String context;
   String cluster;
   String user;
+  
+  Provider.ProviderVersion providerVersion = Provider.ProviderVersion.V2;
 
   @ValidForSpinnakerVersion(
       lowerBound = "1.5.0",
